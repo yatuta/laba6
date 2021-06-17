@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<html>
+	<head>
+		<title>Группировка данных формы</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+			<legend>Оформление заказа</legend>
+		<form>
+			<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Введите адрес доставки и контактные данные:</h3>
+            <label for="fname"><i class="fa fa-user"></i> Контактное лицо</label>
+            <input type="text" id="fname" name="firstname" placeholder="Введите имя и фамилию">
+            <label for="text"><i class="fa fa-envelope"></i> Ваш адрес</label>
+            <input type="text" id="text" name="text" placeholder="Введите ваш адрес">
+           
+            <h3></h3>
+            <div class="row">
+              <div class="col-50">
+                <label for="tnum">Телефон</label>
+                <input type="text" id="tnum" name="tnum" placeholder="Введите ваш телефон">
+             
+                <label for="zip">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="ваш e-mail">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Выберите дату и время доставки:</h3>
+            
+            </div>
+            <label for="data">Дата доставки</label>
+            <input type="text" id="data" name="data" placeholder="дд.мм.гг">
+            <label for="time">Время доставки</label>
+            <input type="text" id="time" name="time" placeholder="--:--">
+
+            <h3>Оплата:</h3>
+			<h3></h3>
+			<label>Наличными <input type = "radio" name = "choice2" value = "cash"> </label>
+			<label>По карте <input type = "radio"name = "choice2" value = "card" checked></label> 
+               <h3>Прочие параметры:</h3>  
+			   			<h3></h3>
+						<input type = "checkbox" name = "type1" value = "intercom">Домофон<label>
+			<input type = "checkbox" name = "type2" value = "ring">Неисправен звонок <label>
+			<input type = "checkbox" name = "type3" value = "dog">Собака во дворе<label>
+			<input type = "checkbox" name = "type4" value = "entrance">Вход с заднего фасада<label>
+			<input type = "checkbox" name = "type5" value = "entrance">Вход с торца здания<label>
+			 <h3></h3>
+			<input type = "submit" name = "submit" value = "подтвердить">
+		</form>
+	</body>
+</html>
